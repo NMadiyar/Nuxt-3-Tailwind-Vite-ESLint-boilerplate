@@ -1,19 +1,11 @@
 <template>
-  <div class="container">
-   <button @click="store.increment()">+</button>
-    <div >{{store.count}}</div>
-  </div>
+ <NuxtPage/>
 </template>
 
 <script lang="ts">
-import {useCounter} from "~/stores/test";
-
-export default defineComponent({
-  name: 'App',
-  setup(){
-    const store = useCounter()
-
-    return { store }
-  }
-})
 </script>
+
+<style lang="scss">
+@import "assets/styles/app";
+@import "assets/styles/tailwind";
+</style>
