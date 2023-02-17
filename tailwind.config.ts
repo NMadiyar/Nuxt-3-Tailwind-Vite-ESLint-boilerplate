@@ -14,7 +14,8 @@ export default <Partial<Config>> {
         'Error.{js,ts,vue}',
         'error.{js,ts,vue}',
         'content/**/*.md',
-        'AuthPage.vue'
+        'AuthPage.vue',
+        "./node_modules/flowbite.{js,ts}"
     ],
     theme: {
         extend: {
@@ -24,5 +25,8 @@ export default <Partial<Config>> {
             }
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('flowbite')
+    ],
 }

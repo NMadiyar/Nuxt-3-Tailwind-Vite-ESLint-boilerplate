@@ -1,7 +1,8 @@
 <template>
 <div class="authpage__bg"></div>
-<div class="authpage__bg authpage__bg2"></div>
-<div class="authpage__bg authpage__bg3"></div>
+<div class="authpage__wave"></div>
+<div class="authpage__wave"></div>
+<div class="authpage__wave"></div>
   <div class="authpage__wrapper font-inter">
     <div class="text-center mb-3">
       <h1><a href="https://bigplay.gg" class="text-black font-[20px] font-inter text-[20px] ">BIGPLAY</a></h1>
@@ -22,10 +23,10 @@
     </form>
     <div class="flex justify-center gap-3">
       <div class="w-[30%] p-[20px] rounded border-[2px] border-[#dfe9f5] flex justify-center items-center">
-        <img src="@/public/google.svg" alt="google" width="24" height="24">
+        <img src="public/google.svg" alt="google" width="24" height="24">
       </div>
       <div class="w-[30%] p-[20px] rounded border-[2px] border-[#dfe9f5] flex justify-center items-center">
-        <img src="@/public/discord-v2-svgrepo-com.svg" alt="discord" width="24" height="24">
+        <img src="public/discord-v2-svgrepo-com.svg" alt="discord" width="24" height="24">
       </div>
     </div>
 
