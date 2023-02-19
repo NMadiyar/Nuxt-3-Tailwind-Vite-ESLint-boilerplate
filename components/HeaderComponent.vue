@@ -11,7 +11,7 @@
           <button
             id="dropdownDefaultButton"
             data-dropdown-toggle="dropdown"
-            class="text-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm pl-1 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="text-black focus:outline-none font-medium rounded-lg text-sm pl-1 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             type="button"
           >
             EN
@@ -74,7 +74,15 @@
 </template>
 
 <script lang="ts">
-export default defineComponent({
+import { onMounted } from "vue";
+import { initDropdowns } from "flowbite";
+export default {
   name: "HeaderComponent",
-});
+
+  setup() {
+    onMounted(() => {
+      initDropdowns();
+    });
+  },
+};
 </script>
